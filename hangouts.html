@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangouts</title>
+    <link rel="stylesheet" href="mergefile.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="mergefile.js"></script>
+
+
+</head>
+<body id="backgroundhangouts">
+    <center>
+        <center><caption>Your Number: <select><option>+1 908-467-2019</option><option>+1 888-400-8080</option></select></caption></center>
+        <br>
+        <h1>Hello, Alex!</h1>
+        <h3>Get started by making a text or a call </h3>
+
+
+        <style>
+            #mydiv {
+              position: absolute;
+              z-index: 9;
+              background-color: #f1f1f1;
+              text-align: center;
+              border: 1px solid #d3d3d3;
+            }
+            
+            #mydivheader {
+              padding: 10px;
+              cursor: move;
+              z-index: 10;
+              background-color: #2196F3;
+              color: #fff;
+              width:7.5cm;
+            }
+            .textstyle{
+                float:left;
+            }
+            </style>
+            
+            
+            <div id="mydiv">
+              <div id="mydivheader" class="user"><script>document.write(username);</script></div>
+              <p id="line1" class="textstyle">Nobody is in this conversation</p>
+              <p id="line2" class="textstyle"></p><br>
+              <p id="line3" class="textstyle"></p><br>
+              <p id="line4" class="textstyle"></p><br>
+              <p id="line5" class="textstyle"></p><br>
+              <p id="line6" class="textstyle"></p><br>
+              <p id="line7" class="textstyle"></p><br>
+              <p id="line8" class="textstyle"></p><br>
+              <p id="line9" class="textstyle"></p><br>
+              <p id="line10" class="textstyle"></p><br>
+              <p id="line11" class="textstyle"></p><br>
+
+
+
+            </div>
+            
+            <script>
+var username = "name"
+            //Make the DIV element draggagle:
+            dragElement(document.getElementById("mydiv"));
+            
+            function dragElement(elmnt) {
+              var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+              if (document.getElementById(elmnt.id + "header")) {
+                /* if present, the header is where you move the DIV from:*/
+                document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+              } else {
+                /* otherwise, move the DIV from anywhere inside the DIV:*/
+                elmnt.onmousedown = dragMouseDown;
+              }
+            
+              function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // get the mouse cursor position at startup:
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                // call a function whenever the cursor moves:
+                document.onmousemove = elementDrag;
+              }
+            
+              function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // calculate the new cursor position:
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                // set the element's new position:
+                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+              }
+            
+              function closeDragElement() {
+                /* stop moving when mouse button is released:*/
+                document.onmouseup = null;
+                document.onmousemove = null;
+              }
+            }
+// Get the modal
+var modal = document.getElementById('mydiv');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+function firstboxuser(){
+    document.getElementsByClassName("user")[0].innerText = "209-491-8518";
+    document.getElementById("line1").innerText = "That just happened?"
+    document.getElementById("line2").innerText = ""
+    document.getElementById("line3").innerText = ""
+    document.getElementById("line4").innerText = ""
+    document.getElementById("line5").innerText = ""
+    document.getElementById("line6").innerText = ""
+    document.getElementById("line7").innerText = ""
+    document.getElementById("line8").innerText = ""
+    document.getElementById("line9").innerText = ""
+
+
+}
+function secondboxuser(){
+    document.getElementsByClassName("user")[0].innerText = "800-207-0890";
+    document.getElementById("line1").innerText = "Your Car Insurance has expired, please"
+    document.getElementById("line2").innerText = "visit ProgressiveCars.com/go to renew"
+    document.getElementById("line3").innerText = ""
+    document.getElementById("line4").innerText = ""
+    document.getElementById("line5").innerText = ""
+    document.getElementById("line6").innerText = ""
+    document.getElementById("line7").innerText = ""
+    document.getElementById("line8").innerText = ""
+    document.getElementById("line9").innerText = ""
+
+}
+function thirdboxuser(){
+    document.getElementsByClassName("user")[0].innerText = "Marylin";
+    document.getElementById("line1").innerText = "Dude"
+    document.getElementById("line1").innerText.fontcolor("gray");    
+    document.getElementById("line2").innerText = "  ?"
+    document.getElementById("line2").innerText.fontcolor("blue");    
+    document.getElementById("line3").innerText = "I just found this stray cat outside of the park"
+    document.getElementById("line3").innerText.fontcolor("gray");    
+    document.getElementById("line4").innerText = ""
+    document.getElementById("line4").innerText.fontcolor("gray");    
+    document.getElementById("line5").innerText = ""
+    document.getElementById("line5").innerText.fontcolor("gray");    
+    document.getElementById("line6").innerText = ""
+    document.getElementById("line6").innerText.fontcolor("gray");    
+    document.getElementById("line7").innerText = ""
+    document.getElementById("line7").innerText.fontcolor("gray");    
+    document.getElementById("line8").innerText = ""
+    document.getElementById("line8").innerText.fontcolor("gray");    
+    document.getElementById("line9").innerText = ""
+    document.getElementById("line9").innerText.fontcolor("gray");    
+
+}
+function fourthboxuser(){
+    document.getElementsByClassName("user")[0].innerText = "Tom Bartley";
+    document.getElementById("line1").innerText = "It's been a long while"
+    document.getElementById("line1").innerText.fontcolor("gray");    
+    document.getElementById("line2").innerText = "  It really has"
+    document.getElementById("line2").innerText.fontcolor("blue");    
+    document.getElementById("line3").innerText = "Just remember when we went skiing? 🎿🎿"
+    document.getElementById("line3").innerText.fontcolor("gray");    
+    document.getElementById("line4").innerText = "We went with Marylin and Ross"
+    document.getElementById("line4").innerText.fontcolor("gray");    
+    document.getElementById("line5").innerText = "  But that was last year"
+    document.getElementById("line5").innerText.fontcolor("blue");    
+    document.getElementById("line6").innerText = "True"
+    document.getElementById("line6").innerText.fontcolor("black");    
+    document.getElementById("line7").innerText = "3 Weeks Ago"
+    document.getElementById("line7").innerText.fontcolor("gray");    
+    document.getElementById("line8").innerText = "Anyone still listening?"
+    document.getElementById("line8").innerText.fontcolor("gray");    
+    document.getElementById("line9").innerText = ""
+    document.getElementById("line9").innerText.fontcolor("gray");    
+
+
+}
+function fifthboxuser(){
+    document.getElementsByClassName("user")[0].innerText = "708-204-3819, Tom Bartley, Maybe: Ross Barnson, 212-356-1019, Alexander L";
+    document.getElementById("line1").innerText = "Tom: Hi"
+    document.getElementById("line1").innerText.fontcolor("gray");    
+    document.getElementById("line2").innerText = "3 days from the graduation?"
+    document.getElementById("line2").innerText.fontcolor("blue");    
+    document.getElementById("line3").innerText = "Tom: Yes"
+    document.getElementById("line3").innerText.fontcolor("gray");    
+    document.getElementById("line4").innerText = "212-356-1019: hello"
+    document.getElementById("line4").innerText.fontcolor("gray");    
+    document.getElementById("line5").innerText = "Tom: Anyone on PostBook?"
+    document.getElementById("line5").innerText.fontcolor("gray");    
+    document.getElementById("line6").innerText = "Yes"
+    document.getElementById("line6").innerText.fontcolor("blue");    
+    document.getElementById("line7").innerText = "212-356-1019: How is everyone"
+    document.getElementById("line7").innerText.fontcolor("gray");    
+    document.getElementById("line8").innerText = ""
+    document.getElementById("line8").innerText.fontcolor("gray");    
+    document.getElementById("line9").innerText = ""
+    document.getElementById("line9").innerText.fontcolor("gray");    
+}
+function sixthboxuser(){
+    document.getElementsByClassName("user")[0].innerText = "Laura Capcill";
+    document.getElementById("line1").innerText = ""
+    document.getElementById("line1").innerText.fontcolor("gray");    
+    document.getElementById("line2").innerText = ""
+    document.getElementById("line2").innerText.fontcolor("gray");    
+    document.getElementById("line3").innerText = ""
+    document.getElementById("line3").innerText.fontcolor("gray");    
+    document.getElementById("line4").innerText = ""
+    document.getElementById("line4").innerText.fontcolor("gray");    
+    document.getElementById("line5").innerText = ""
+    document.getElementById("line5").innerText.fontcolor("gray");    
+    document.getElementById("line6").innerText = ""
+    document.getElementById("line6").innerText.fontcolor("gray");    
+    document.getElementById("line7").innerText = ""
+    document.getElementById("line7").innerText.fontcolor("gray");    
+    document.getElementById("line8").innerText = ""
+    document.getElementById("line8").innerText.fontcolor("gray");    
+    document.getElementById("line9").innerText = ""
+    document.getElementById("line9").innerText.fontcolor("gray");    
+
+}
+            </script>
+            
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Encrypt Call
+          </label>
+    <div class="container">
+        <input type="text" id="display" placeholder="0" readonly>
+        <div class="keypad">
+            <button class="key" data-value="1">1</button>
+            <button class="key" data-value="2">2</button>
+            <button class="key" data-value="3">3</button>
+            <button class="key" data-value="4">4</button>
+            <button class="key" data-value="5">5</button>
+            <button class="key" data-value="6">6</button>
+            <button class="key" data-value="7">7</button>
+            <button class="key" data-value="8">8</button>
+            <button class="key" data-value="9">9</button>
+            <button class="key" data-value="0">0</button>
+            <button class="key" id="backspace">⌫</button>
+            <button class="callkey" data-value="Call" onclick="openCameraPopup()">Call</button>
+        </div>
+    </div>
+    </center>
+<div class="contactlist">
+    <div class="contact" onclick="firstboxuser()">
+<h3>209-491-8518</h3>
+<p>That just happened?</p>
+    </div>
+    <br>
+    <div class="contact" onclick="secondboxuser()">
+<h3 style="color:red;" title="Potential Spam">800-207-0890</h3>
+<p>Your Car Insuran...</p>
+    </div>
+    <br>
+    <div class="contact" onclick="thirdboxuser()">
+<h3>Marylin</h3>
+<p>I just found this st...</p>
+    </div>
+    <br>
+    <div class="contact" onclick="fourthboxuser()">
+<h3>Tom Bartley</h3>
+<p>Anyone still list...</p>
+    </div>
+    <br>
+    <div class="contact" onclick="fifthboxuser()">
+<h3>708-204-3819, Tom B</h3>
+<p><i>212-356-1019</i> How is...</p>
+    </div>
+    <br>
+    <div class="contact" onclick="sixthboxuser()">
+<h3>Laura Capcill</h3>
+<p><i>Shared a link</i></p>
+    </div>
+    <br>
+   <div id="newcontact"><center style="font-size: xx-large;">New Contact</center></div>
+</div>
+</body>
+<script>
+    // Function to open a new popup window for the camera
+    function openCameraPopup() {
+        // Open a new window with specified size and features
+        const cameraWindow = window.open(
+            'camera.html',
+            'CameraWindow',
+            'width=600,height=610'
+            
+        );
+    }
+</script>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<style>
+    .footer{
+  font-size: 10px;
+  background-color: black;
+  color:white;
+}
+  </style>
+<div class="footer">
+  <caption ID="0"><B>CREDITS</B>©Written by Moraly Froms and Jacob Sanchez, FINISHED 2024 EDITED 2049</caption><br>
+<caption ID="1"><B>1</B>©2018 - PostBook Education Services</caption><br>
+<caption ID="1"><B>1</B>©1998 - PostBook Web Services (©1991 PostBook Web) <a class="captionhref" href="" title="Open PostBook Webservice">https://licence.webservice.postbook.net</a></caption><br>
+<caption ID="2"><B>2</B>THE USE OF THIS PROGRAM IS NOT TO BE COPIED, OR CONFUSED WITH <i>G SUITE</i></caption><br>
+<caption ID="3"><B>3</B>RESOURCES INVOLVING THE MAIDPHONE, ANKER, NIXXON, GOMOTORS, PWS, POSTBOOK, <span title="Discontinued as a 3-rd class website">USA MOBILE</span>, MEDKIT, OR ANY OTHER POSTBOOK OWNED BUISNESSES</caption><br>
+<caption ID="4"><B>4</B>DISCOUNT OFFERS OR MONTHLY PAYMENTS MUST HAVE A <I>POSTBOOK PREMIUM</I> MEMBERSHIP OR A <I TITLE="(PostBook student membership)">MyEdu MEMBERSHIP</I>, <B>ON ANY UNDERSTANDING ON HOW TO CREAT A MEMBERSHIP,<a CLASS="captionhref" href="#NEWMEMBER"> CLICK HERE</a></B></caption><br>
+<caption ID="5"><B>5</B>TO TRADE IN A POSTBOOK DEVICE, YOU MUST COMPLY WITH THE TERMS AND CONDITIONS</caption><br>
+<caption ID="6"><B>6</B>IF THE POSTBOOK PRODUCTS ARE COPIED, SUCH AS <I>DEVICES, SERVICES, WEBSITES, <SPAN title="Can be copied with account owners premission, see #11">OR ACCOUNTS<a class="cnote" href="#11">11</a></SPAN></I><img src="image files/Private/CopyrightIMG.png" width="1" height="1" alt="WARNING, IF THIS IMAGE IS NOT SHOWN, THAN THIS WEBSITE HAS BEEN COPIED, OR REPUBLISHED"></caption><br>
+<caption ID="7"><B>7</B>TRADE IN VALUES, MUST TRADE IN A DEVICE MADE IN 2032 OR NEWER, TO TRADE IN A DEVICE SUCH AS, <I>USMOBILE</I> DEVICE, THAN PLEASE CONTACT THE USAMOBILE WEBSITE. </caption><br>
+<caption ID="8"><B>8</B>TO TRADE IN A CAR, <i><MARK TITLE="SEE #12 OR CONTACT ZEE FAMILY CARS (<i>modified source</i>)"><A CLASS="CNOTE" HREF="#12">MODIFIED</A></MARK> OR <I TITLE="SEE #13">RUNNING</I> OR <U>NOT</U> PLEASE CONTACT <SPAN TITLE="US +1 800-425-8080">GOMOTORS</SPAN>  </i></caption><br>
+<caption ID="9"><B>9</B>IF YOU ARE PURCHACING AN ITEM OUTSIDE OF THE USA, PLEASE DO NOT TRADE YOUR ITEM IN TO THE <B>POSTBOOK <I>USA</I></B> OFFICE, PLEASE RESORT TO TRADING YOUR ITEM TO YOUR OFFICE IN THE AREA, MAIDPHONE SHOPS ARE AVALIBLE IN <B><SPAN title="APPLE INC. (800 MY-APPLE)">APPLE</SPAN> <I>SHOPS</I></B></caption><br>
+<caption ID="10"><B>10</B>IF YOU ARE PURCHACING AN ITEM IN THE US, YOU AGREE TO HAVE YOUR DEVICE SCANNED, VIEWED OR MONITORED FOR THE MINIMUM OF <I>3 SECONDS</I> AND MAX OF <I>ONE HOUR</I> (<U>depends on device use</U>)</caption><br>
+<caption ID="11"><B>11</B>TO HAVE AN ACCOUNT COPIED, OR MODIFIED, (<U>OR PASSWORD SHARED</U>) PLEASE CONTACT THE <I title="APPLIES TO USA AND CANADA ONLY"><U>PWS DEPARTMENT OF ACCOUNTS (<B>USA/<SPAN TITLE="CANADA">CA</SPAN>:</B> <I>+1 888-704-2366</I>)</U></I></caption><br>
+<caption ID="12"><B>12</B>TO TRADE A MODIFIED DEVICE, (<I>includes veichles, "GOMOTORS LLC."</I>) PLEASE FILL OUT A <I>POSTBOOK MODIFICATION SHEET,</I><A CLASS="CAPTIONHREF" HREF="" TITLE="Open PostBook Modification Sheet">https://webservice.postbook.net/lib/modifyform.htm</A></caption><br>
+<caption ID="13"><B>13</B>TO TRADE A <I>RUNNING</I> DEVICE, IT MUST BE FROM 2032 OR NEWER, OLDER DEVICES CANNOT BE SOLD TO PWS/GOMOTORS</caption><br>
+<caption ID="14"><B>14</B>TO TRADE A <I>Non-PostBook</I> DEVICE, IT MUST BE FROM 2032 OR NEWER, AND RELATIONED WITH POSTBOOK OR POSTBOOK (<b>PARTNER</b>)</caption><br>
+<caption ID="15"><B>15</B>TO PURCHACE A WEB PRODUCT, (<i>Website</i>) or (<i>PostBook Premium,</i><u> Subscriptioin</u>) PLEASE COMPLY WITH THE TERMS OR CONDITIONS WITH THE PURCHACE. IF UNABLE TO COMPLY, YOUR SUBSCRIPTION WILL BE BANNED AND <I>NON-REFUNDABLE</I></caption><br>
+<caption ID="16"><B>16</B>SMS IS NO LONGER SUPPORTED WITH <I>MAIDPHONE 10 <B>OR EARLIER</B></I>, PLEASE UPGRADE TO A NEWER PHONE</caption><br>
+<caption ID="17"><B>17</B>MAIDPHONE CALLS ARE NO LONGER SUPPORTED WITH <I>MAIDPHONE 10 <B>OR EARLIER</B></I>, PLEASE UPGRADE TO A NEWER PHONE</caption><br>
+<caption ID="18"><B>18</B>We approximate your location from your internet IP address by matching it to a geographic region or from the location entered during your previous visit to MaidPhone.</caption><br>
+<caption ID="19"><B>19</B>SCRIBBLEITIS WEBSITES ARE UNDER COPYRIGHT FROM THE CREATOR, FOR COPYING PURPOSES PLEASE CONTACT THE DOCUMENT OWNER</caption><br>
+<caption ID="20"><B>20</B>FOR SPECIAL DEALS OR PARTNERSHIPS, PLEASE CONTACT MAIDPHONE, (<I>SPECIAL DEALS ONLY QUALIFY FOR <B>POSTBOOK PREMIUM</B> MEMBERS</I>)</caption><br>
+
+
+</div>
+<br>
+</html>
