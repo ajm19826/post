@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html onload="openCity(event, 'London')" lang="en">
+    <!--COPYRIGHT ©1995 - ~~ POSTBOOK INC POSTBOOK FILES //
+    NONE OF THESE FILES CAN BE COPIED OR STOLEN.
+    PLEASE READ THE TERMS OF CONDITIONS FOR MORE INFO
+    https://postbook.net/terms-of-conditions.html
+    OR EMAIL / TEXT postbook@postbook.net /// +1 732 400 8080 (888 400 8080 toll free)
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PostBook - Shop, Developers, Feed ✨New! and much more!">
+    <title>PostBook</title>
+    <!--Files / Activation files or js-->
+    <script src="script.js"></script>
+    <script src="helper files/helper.js"></script>
+    <script src="helper files/backup.js"></script>
+    <script src="extention files/mergefile.js"></script>
+    <script src="extention files/serverscript-saftey-plugin.js"></script>
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="helper files/helper.css">
+    <link rel="stylesheet" href="extention files/mergefile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--End Activation files sequence-->
+    <!--First Line Titlebar-->
+    <div id="headline">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')">Store</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Hangouts</button>
+            <button class="tablinks" onclick="openCity(event, 'America')">Feed<b><i>✨New!✨</i></b></button>
+            <button class="tablinks" onclick="openCity(event, 'Galia')">NATO<b><i>✨New!✨</i></b></button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">More</button>
+           
+            <button class="button-10" style="float:right;" onclick="document.getElementById('id01').style.display='block'">Sign In</button>
+            <button class="button-10" style="float:right;" onclick="print()">Print Page</button>
+
+          </div>
+    </div>
+    </head>
+    <script>
+      function openWiki() {
+  var iframe = document.getElementById("wikiFrame");
+  var elmnt = iframe.contentWindow.document.getElementById("list")[0];
+  elmnt.style.display = "none";
+  console.log("Command Succesful!");
+}
+function wikiOpen(){
+  openCity(event, 'Italy');
+openWiki();
+}
+    </script>
+    <body>
+    <!--PostBook Login Area-->
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="?account=verified" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <center><h2>Sign In</h2></center>
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="e.g. example@postbook.net" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="e.g. ILikeHotdogs1980" name="psw" required>
+              
+            <button type="submit" onclick="document.getElementById('id01').style.display='none'">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+    <!--End Login Area-->
+    <div id="Italy" class="tabcontent">
+    
+      <br>
+    </div>
+
+<div id="Galia" class="tabcontent">
+  <!--Nato-->
+  <div class="sidetextnato">
+    <div id="BackToTopNATO"></div>
+    <h1>Nato OS-7</h1><br><br><br>
+    <p>The most advanced developing software</p><br>
+    <p>for mini-developers.</p><br>
+    <b>Trusted & Used by more than <i>1.2 million</i> users.</b><br><br>
+    <p>Help with some of our friends at      <img src="image files/ToolTabwizard-Microsoft.png" width="90" height="30" alt="microsoft-ToolWizard" title="Microsoft"></p>
+  </div>
+  <div class="sidenatoimg"></div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><p>Want to code your own Program? <a href="#editor" onclick="showEditor();">Try It!</a></p>
+  <div id="codeEditor">
+  <style>
+ 
+    .accountbackround{
+        width: 250px;
+        height: 30px;
+        background-color: blue;
+outline: cornflowerblue;
+}
+.sizedTextarea{
+    /*For $POST Textarea*/
+    width: 530px;
+    height: 500px;
+  background-color: rgb(87, 82, 82);
+  color:white;
+  font-family: 'Courier New', Courier, monospace;
+    resize: vertical;
+    float:right;
+
+}
+</style>
+<br>
+<br>
+<br>
+<!--Program Scripts-->
+<textarea class="sizedTextarea" required  placeholder="//The body of your program (HTML, CSS, JS)" id="textcontent" contenteditable="true" >
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ <h1>PostBook Program</h1> 
+ <hr color="black">
+ <p>This is a PostBook Program designed for <I>Nato Testing Services</I><br></p>
+ <p>This program may be:</p>
+ <ol>
+  <li>Rewritten</li>
+  <li>Deployed</li>
+  <li>Copied <i>(code)</i></li>
+ </ol>
+<footer>
+  <caption>COPYRIGHT SCRIBBLEITIS-POSTBOOK-NATO THIS PROGRAM IS A NON-COMMERCIAL DEMO PROGRAM.</caption>
+</footer>
+</body>
+</html>
+</textarea>
+<!-- End Program Scripts -->
+<br>
+<br>
+
+<style>
+    #img_url {
+background: #ddd;
+width:100px;
+height: 90px;
+display: block;
+}
+</style>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<br>
+<script type="text/javascript">
+        function img_pathUrl(input){
+    $('#img_url')[0].src = (window.URL ? URL : webkitURL).createObjectURL(input.files[0]);
+}
+</script>
+<footer>
+    <p style="float: left;">🔴 Live Privew <i>(may have to press any key to continue in editor)</i></p><button onclick="closeeditorlive()">Close</button>
+
+    <div class="post-section">
+        <br>
+        <div style="width: 380px;" id="showdcd" class="priviewPostDocument"></div>
+
+      
+    <div style="width: 380px;" id="showtext" class="priviewPostDocument"></div>
+
+</div>
+</footer>
+<script>
+    var textcontent = document.getElementById('textcontent');
+
+textcontent.onkeyup = textcontent.onkeypress = function(){
+    document.getElementById('showtext').innerHTML = this.value;
+}
+var dcd = document.getElementById('dcd');
+
+textcontent.onkeyup = textcontent.onkeypress = function(){
+    document.getElementById('showdcd').innerHTML = this.value;
+}
+</script>
+<style>
+    /*Document for $previewPOST.element("".previewPostDocument, .outlinePost);*/
+    .previewPostDocument{
+        background-color: gray;
+        color: white;
+    }
+    #hideName{
+        background-color:dimgray;
+        font-weight: 700;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.55cm;
+        width:1.25cm;
+        color:black;
+        border: none;
+    }
+    .post-section{
+    /*
+    Post section defins the area of *WHERE the post will be.
+    image-section defines if there is a big image.
+    */
+    width: 20cm;
+    height: 530px;
+    border-color: black;
+    border-width: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-weight: 400;
+}
+.img{
+    border-radius: 5px;
+    alt: "Image";
+    background-image: url(imgdeleted.png);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 2.50cm;
+    background-repeat: no-repeat;
+}
+.video{
+    border-radius: 10px;
+    width: 150cm;
+    height: 100cm;
+}
+.uname-label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.text{
+    border: dimgrey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.reply-section{
+    border: black;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.label-reply-section{
+background-color: goldenrod;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+width: 55px;
+}
+.iframe{
+  border: 0.25cm;
+  border-color:rgb(46, 43, 43);
+  border-radius: 1cm;
+  width: 10cm;
+  height:5.95cm;
+  /*
+  Only avalible to primium users.
+  $20 Per Iframe
+  */
+}
+/*END POST*/
+
+</style>
+
+</div>
+<style>
+  .sidenatoimg{
+  width:20.75cm;
+  height:20cm;
+  background-image: url("image files/NATO7IMGDEV.png");
+  background-repeat: no-repeat;
+background-size:contain;
+float: left;
+  
+}
+</style>
+<hr color="black"><br><br><br>
+<div class="natoslides" style="background-image: url('image files/NATO7IMGDEV.png');  background-size:contain; color: white;">Learn more on the creation of <i>NATO</i><br> <a href="#Catalog1">Learn More</a></div><div style="background-image: url('image files/RecentAppNATOIMG.png');  background-size:contain; color: black;" class="natoslides">The security of NATO.<a href="#Catalog2">Learn More</a></div><div style="background-image: url('image files/SlideshowApps.jpg');  background-size:contain; color: black;" class="natoslides">Compatible apps with NATO <a href="#Catalog3">Learn More</a></div><div style="background-image: url('image files/DiscStorageNATO.png');  background-size:contain; color: black;" class="natoslides">More storage for the long that lasts. <a href="#Catalog4">Learn More</a></div><div style="background-image: url('image files/EntertainmentApps.jpg');  background-size:contain; color: white;" class="natoslides">Kick back, jump in and game on! <a href="#Catalog5">Learn More</a></div><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr color="black">
+<center><h1>A quick demo on how an app works!</h1><img src="image files/Google-Chrome-icon.png" style="float: right;" width="110" height="110"></center>
+<video id="Video1NATO" controls autoplay loop>
+  <source src="image files/Video1NATO.webm" type="video/mp4">
+  Error Message / Video Unplayable
+</video>
+<div id="Catalog1">
+<center><h1 style="color: white;">See this?</h1><br><h2 style="color:white;">This is <b>NATO</b></h2></center><br><br><br>
+<!-- Float Left -->
+<p class="highlight" style="float:left;">NATO OS has been a operating system for</p><br><br>
+<p class="highlight" style="float:left;">more than <b>60 years</b>, it used to be</p><br><br>
+<p class="highlight"style="float:left;">a full-on operating system with very limited commands.</p><br><br>
+<p class="highlight"style="float:left;">But, due to the rise of other operating systems like</p><br><br>
+<p class="highlight"style="float:left;">Apple and Windows (<i>Microsoft</i>),</p><br><br>
+<p class="highlight"style="float:left;">ever since NATO OS-4, NATO became a developing</p><br><br>
+<p class="highlight"style="float:left;">operating system.</p><br><br><br>
+<b class="highlight"style="float:left;">Wanna be a developer?</b><center> <button class="button-89" role="button">Download Nato!</button></center>
+<!-- Float Right -->
+<h3 class="highlight" style="float:right;">See this?</h3><br><br>
+<p  class="highlight"style="float:right;">This is the design & Attribute</p><br><br>
+<p class="highlight"style="float:right;">area for the NATO OS.</p><br><br>
+<p class="highlight"style="float:right;">Nato OS wouldn't be possible (4-7) without</p><br><br>
+<p class="highlight"style="float:right;">Visual Studio. (<i>Microsoft Windows</i>)</p><br><br><br><br>
+<p class="highlight"style="float:right;">Some developers used NATO to make things like File Explorer, (<i>for windows.</i>)</p><br><br>
+<p class="highlight"style="float:right;">Over 40,000 engineers and programmers worked on NATO OS</p><br>
+<p class="highlight"style="float:right;">Join the hundreds of thousands of people that use NATO!</p><br><br>
+<center><a href="#BackToTopNATO">Back to top</a></center>
+
+<br><br></div><br><br>
+
+
+<div id="Catalog2">
+  <!--Nato Security-->
+  <h3 class="highlight" style="float:right;">This is NATO security.</h3><br><br>
+  <p class="highlight"style="float:right;">NATO security helped protect</p><br><br>
+  <p class="highlight"style="float:right;">hundreds of thousands of attacks.</p><br><br>
+  <p class="highlight"style="float:right;">With NATO, security is mandetory.</p><br><br>
+  <p class="highlight"style="float:right;">Using PostBook Encryption, store</p><br><br>
+  <p class="highlight"style="float:right;">any files (<i>even the secret ones!</i>)</p><br><br>
+  <p class="highlight"style="float:right;">will be stored safely in the Cloud.</p>
+  <b class="highlight"style="float:left;">Wanna be a developer?</b><center> <button class="button-89" role="button">Download Nato!</button></center><br>
+  <p class="highlight"style="float:right;">If you want to know, how much you are protected, like this much <progress value="99"></progress>!</p><br><br>
+  <p class="highlight"style="float:right;">or this much, <progress value="8" id="smallvalue1"></progress>{{{(>_<)}}}</p><br><br>
+  <p class="highlight"style="float:right;">you can always check! <button onclick="document.getElementById('smallvalue1').value = '60';" title="Click me!">Cache Reset (demo)</button></p>
+
+<!--Left-->
+<h3 class="highlight" style="float:left;">Special, even more!</h3><br><br>
+<p class="highlight"style="float:left;">Accidentally shut off your computer?</p><br><br>
+<p class="highlight"style="float:left;">Want to know what was your last app?</p><br><br>
+<p class="highlight"style="float:left;">Luckily, due to our professional c#</p><br><br>
+<p class="highlight"style="float:left;">programmers, we tell you exactly what</p><br><br>
+<p class="highlight"style="float:left;">your last app was, with no problem!</p><br><br><br><br>
+<p class="highlight"style="float:left;">Also, you can cache reset your files</p><br><br>
+<p class="highlight"style="float:left;">if you still don't think you are safe!</p><br><br>
+<center><a href="#BackToTopNATO">Back to top</a></center>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div><br><br>
+<div id="Catalog3">
+<center><h1>Apps, Apps, Apps!</h1>
+<p>We have apps! All of them. (most of them)</p><br>
+<p>We teamed up with <b>Google</b>, <b>Microsoft</b>, and <i>wayyyy</i> more!</p><br>
+<p>All to give you the best experience of testing</p><br>
+<p>apps possible! No matter if it is your home PC,</p><br>
+<p>Developing Machiene (<b title="Yes, it is very true. +1 888 400 8095 POSTBOOK / NATO DEPT.">like we use this back at postbook</b>)</p><br>
+<p>or any other thing. NATO is here for your apps. All</p><br>
+<p>with our very own app shop.</p><br><br>
+<img src="image files/AppShopNATO.png" width="420" height="430"><br><br>
+<b class="highlight">Wanna be a developer?</b><center> <button class="button-89" role="button">Download Nato!</button></center><br>
+<p>Also, if somebody tries to <a href="#Catalog2">steal your apps</a>, it won't happen.</p><br>
+<p>With <b>pay-to-download</b> apps, it will be impossible for somebody to steal anything.</p><br><br>
+<center><a href="#BackToTopNATO">Back to top</a></center>
+
+
+
+</center>
+
+</div>
+<div id="Catalog4">
+  <center><h1 style="color: white;">See this?</h1><br><h2 style="color:white;">This is <b>NATO's Files</b></h2></center><br><br><br>
+<!-- Float Left -->
+<p class="highlight" style="float:left;">NATO OS has alot of storage for files with barely</p><br><br>
+<p class="highlight" style="float:left;">any storage. We love to see devices with more storage</p><br><br>
+<p class="highlight"style="float:left;">for <i>more/less</i> files.</p><br><br>
+<p class="highlight"style="float:left;">Unlike other devices, where the storage runs out quickly,</p><br><br>
+<p class="highlight"style="float:left;">NATO has software that will *almost never* run out!</p><br><br>
+<p class="highlight"style="float:left;">Don't believe us?</p><br><br>
+<button class="button-86" role="button">Download Nato</button>
+
+<!-- Float Right -->
+<h3 class="highlight" style="float:right;">Unfortunaly,</h3><br><br>
+<p  class="highlight"style="float:right;">our storage isnt infinite, so</p><br><br>
+<p class="highlight"style="float:right;">You don't want to clutter up your desktop</p><br><br>
+<p class="highlight"style="float:right;">with no storage remaining, or else you might</p><br><br>
+<p class="highlight"style="float:right;">wind up with glitched out things, like this button!</p><br><br>
+<button class="button-49" role="button" style="float:right;">Glitchy Button</button><br><br><br><br><br>
+<p class="highlight"style="float:right;">We can't tell you your limits, but we can tell you</p><br><br>
+<p class="highlight"style="float:right;">that we highly reccomend NATO OS-7 as the best</p><br><br>
+<p class="highlight"style="float:right;">Developing Operating System!</p><br><br>
+<center><a href="#BackToTopNATO">Back to top</a></center>
+</div>
+<div id="Catalog5">
+  <h1 style="color: white; float:left;">Game on!</h1><br><h2 style="color:white;"><br><br><br>
+<!-- Float Left -->
+<p class="highlight" style="float:left;">NATO OS is a computing device that not only is used</p><br><br>
+<p class="highlight" style="float:left;">for developing, but can also be a gaming device.<a href="#A1" class="anote">A1</a></p><br><br>
+<p class="highlight"style="float:left;">unlike other developing consoles, NATO has smooth graphics. <a href="#A2" class="anote">A2</a></p><br><br>
+<p class="highlight"style="float:left;">NATO OS supports various games, from a large quantity.</p><br><br>
+<p class="highlight"style="float:left;">There are games like <u class="highlight">Tetris</u> which will be always supported.</p><br><br>
+<p class="highlight"style="float:left;">Don't believe us?</p><br><br>
+<button class="button-86" role="button">Download Nato</button>
+
+<!-- Float Right -->
+<h3 class="highlight" style="float:right;">Also,</h3><br><br>
+<p  class="highlight"style="float:right;">if you want a nato-like host in yor browser for</p><br><br>
+<p class="highlight"style="float:right;">other people (like friends) to play games on NATO,</p><br><br>
+<p class="highlight"style="float:right;">always remember you can go to <a class="highlight"href="lib/Public LIB/onemedia/onemedia.htm">OneMedia</a></p><br><br>
+<p class="highlight"style="float:right;">to set up your virtual NATO today!</p><br><br>
+<center><a href="#BackToTopNATO">Back to top</a></center>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="footer">
+  <caption ID="0"><B>CREDITS</B>©Written by Moraly Froms and Jacob Sanchez, FINISHED 2024 EDITED 2049</caption><br>
+<caption ID="1"><B>1</B>©2018 - PostBook Education Services</caption><br>
+<caption ID="1"><B>1</B>©1998 - PostBook Web Services (©1991 PostBook Web) <a class="captionhref" href="" title="Open PostBook Webservice">https://licence.webservice.postbook.net</a></caption><br>
+<caption ID="2"><B>2</B>THE USE OF THIS PROGRAM IS NOT TO BE COPIED, OR CONFUSED WITH <i>G SUITE</i></caption><br>
+<caption ID="3"><B>3</B>RESOURCES INVOLVING THE MAIDPHONE, ANKER, NIXXON, GOMOTORS, PWS, POSTBOOK, <span title="Discontinued as a 3-rd class website">USA MOBILE</span>, MEDKIT, OR ANY OTHER POSTBOOK OWNED BUISNESSES</caption><br>
+<caption ID="4"><B>4</B>DISCOUNT OFFERS OR MONTHLY PAYMENTS MUST HAVE A <I>POSTBOOK PREMIUM</I> MEMBERSHIP OR A <I TITLE="(PostBook student membership)">MyEdu MEMBERSHIP</I>, <B>ON ANY UNDERSTANDING ON HOW TO CREAT A MEMBERSHIP,<a CLASS="captionhref" href="#NEWMEMBER"> CLICK HERE</a></B></caption><br>
+<caption ID="5"><B>5</B>TO TRADE IN A POSTBOOK DEVICE, YOU MUST COMPLY WITH THE TERMS AND CONDITIONS</caption><br>
+<caption ID="6"><B>6</B>IF THE POSTBOOK PRODUCTS ARE COPIED, SUCH AS <I>DEVICES, SERVICES, WEBSITES, <SPAN title="Can be copied with account owners premission, see #11">OR ACCOUNTS<a class="cnote" href="#11">11</a></SPAN></I><img src="image files/Private/CopyrightIMG.png" width="1" height="1" alt="WARNING, IF THIS IMAGE IS NOT SHOWN, THAN THIS WEBSITE HAS BEEN COPIED, OR REPUBLISHED"></caption><br>
+<caption ID="7"><B>7</B>TRADE IN VALUES, MUST TRADE IN A DEVICE MADE IN 2032 OR NEWER, TO TRADE IN A DEVICE SUCH AS, <I>USMOBILE</I> DEVICE, THAN PLEASE CONTACT THE USAMOBILE WEBSITE. </caption><br>
+<caption ID="8"><B>8</B>TO TRADE IN A CAR, <i><MARK TITLE="SEE #12 OR CONTACT ZEE FAMILY CARS (<i>modified source</i>)"><A CLASS="CNOTE" HREF="#12">MODIFIED</A></MARK> OR <I TITLE="SEE #13">RUNNING</I> OR <U>NOT</U> PLEASE CONTACT <SPAN TITLE="US +1 800-425-8080">GOMOTORS</SPAN>  </i></caption><br>
+<caption ID="9"><B>9</B>IF YOU ARE PURCHACING AN ITEM OUTSIDE OF THE USA, PLEASE DO NOT TRADE YOUR ITEM IN TO THE <B>POSTBOOK <I>USA</I></B> OFFICE, PLEASE RESORT TO TRADING YOUR ITEM TO YOUR OFFICE IN THE AREA, MAIDPHONE SHOPS ARE AVALIBLE IN <B><SPAN title="APPLE INC. (800 MY-APPLE)">APPLE</SPAN> <I>SHOPS</I></B></caption><br>
+<caption ID="10"><B>10</B>IF YOU ARE PURCHACING AN ITEM IN THE US, YOU AGREE TO HAVE YOUR DEVICE SCANNED, VIEWED OR MONITORED FOR THE MINIMUM OF <I>3 SECONDS</I> AND MAX OF <I>ONE HOUR</I> (<U>depends on device use</U>)</caption><br>
+<caption ID="11"><B>11</B>TO HAVE AN ACCOUNT COPIED, OR MODIFIED, (<U>OR PASSWORD SHARED</U>) PLEASE CONTACT THE <I title="APPLIES TO USA AND CANADA ONLY"><U>PWS DEPARTMENT OF ACCOUNTS (<B>USA/<SPAN TITLE="CANADA">CA</SPAN>:</B> <I>+1 888-704-2366</I>)</U></I></caption><br>
+<caption ID="12"><B>12</B>TO TRADE A MODIFIED DEVICE, (<I>includes veichles, "GOMOTORS LLC."</I>) PLEASE FILL OUT A <I>POSTBOOK MODIFICATION SHEET,</I><A CLASS="CAPTIONHREF" HREF="" TITLE="Open PostBook Modification Sheet">https://webservice.postbook.net/lib/modifyform.htm</A></caption><br>
+<caption ID="13"><B>13</B>TO TRADE A <I>RUNNING</I> DEVICE, IT MUST BE FROM 2032 OR NEWER, OLDER DEVICES CANNOT BE SOLD TO PWS/GOMOTORS</caption><br>
+<caption ID="14"><B>14</B>TO TRADE A <I>Non-PostBook</I> DEVICE, IT MUST BE FROM 2032 OR NEWER, AND RELATIONED WITH POSTBOOK OR POSTBOOK (<b>PARTNER</b>)</caption><br>
+<caption ID="15"><B>15</B>TO PURCHACE A WEB PRODUCT, (<i>Website</i>) or (<i>PostBook Premium,</i><u> Subscriptioin</u>) PLEASE COMPLY WITH THE TERMS OR CONDITIONS WITH THE PURCHACE. IF UNABLE TO COMPLY, YOUR SUBSCRIPTION WILL BE BANNED AND <I>NON-REFUNDABLE</I></caption><br>
+<caption ID="16"><B>16</B>SMS IS NO LONGER SUPPORTED WITH <I>MAIDPHONE 10 <B>OR EARLIER</B></I>, PLEASE UPGRADE TO A NEWER PHONE</caption><br>
+<caption ID="17"><B>17</B>MAIDPHONE CALLS ARE NO LONGER SUPPORTED WITH <I>MAIDPHONE 10 <B>OR EARLIER</B></I>, PLEASE UPGRADE TO A NEWER PHONE</caption><br>
+<caption ID="18"><B>18</B>We approximate your location from your internet IP address by matching it to a geographic region or from the location entered during your previous visit to MaidPhone.</caption><br>
+<caption ID="19"><B>19</B>SCRIBBLEITIS WEBSITES ARE UNDER COPYRIGHT FROM THE CREATOR, FOR COPYING PURPOSES PLEASE CONTACT THE DOCUMENT OWNER</caption><br>
+<caption ID="20"><B>20</B>FOR SPECIAL DEALS OR PARTNERSHIPS, PLEASE CONTACT MAIDPHONE, (<I>SPECIAL DEALS ONLY QUALIFY FOR <B>POSTBOOK PREMIUM</B> MEMBERS</I>)</caption><br>
+<caption ID="A1"><B>(1)</B>NATO OS NOT RECCOMENDED FOR A MAIN SOURCE OF GAMING.</caption><br>
+<caption ID="A1"><B>(2)</B>GRAPHICS VARY ON STORAGE & GRAPHICS CARD CAPACITY</caption><br>
+
+
+</div>
+<br>
+</div>
+
+</div>
+    <div id="Paris" class="tabcontent">
+     <center><iframe src="extention files/hangouts-application.htm" id="hangouts-iframe" style="width:1670px; height: 875px;"></iframe></center>
+</div>
+
+<div id="America" class="tabcontent">
+  <center><h1>Feed</h1></center>
+  <center id="MSGDaily" style="background-color: yellow;"><P>If you are a PostBook User, Your PostBook Feed account will be migrated from PostBook Feed(old) to PostBook Feed ✨New           <a href="">Learn More</a></P>       <button onclick="document.getElementById('MSGDaily').style.display ='none';">Hide</button></center>
+  <br><br><br><br><br>
+  <div class="postmain">
+
+    <a class="usernamepost"><b><center>PostBook S.</center></b></button>
+      <br><br>
+<img src="image files/PostFeed/1.png" width="300" height="200" title="img.postbookonemedia.com:8843/LIB/PUBLIC/FEED-PWS:TempStatic/342765374251/1.png">
+<p>Ready for PostBook Update 10.8?</p><br><p>We are bringing back PostBook Media! <b><i><a>#postbookfeed</a> <a>#welovepws</a></i></b></p>
+  <!-- HTML !-->
+  <button class="button-85" onclick=""  role="button">Like</button>  <button class="button-85" onclick="" role="button">Dislike</button><i><b>Likes: </b><script>document.write(famelikes)</script></i><br>
+  <br>
+ 
+    </a>
+
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="postmain">
+
+    <a class="usernamepost"><b><center>Sally T.</center></b></button>
+      <br><br>
+<img src="image files/PostFeed/2.png" width="300" height="200" title="img.postbookonemedia.com:8843/LIB/PUBLIC/FEED-PWS:TempStatic/8793242316/1.png">
+<p>Can somebody please help me with this?</p><br><p>plz help, this is my work pc<b><i><a>#nato</a></i></b></p>
+  <!-- HTML !-->
+  <button class="button-85" onclick=""  role="button">Like</button>  <button class="button-85" onclick="" role="button">Dislike</button><i><b>Likes: </b><script>document.write(likes)</script></i><br>
+  <br>
+ 
+    </a>
+
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="postmain">
+
+    <a class="usernamepost"><b><center>PostBook S.</center></b></button></a>
+      <br><br>
+<iframe src="extention files/OneMedia-FeedSnapshots/Snapshot10.8.htm"> </iframe> <!-- HTML !-->
+  <button class="button-85" onclick=""  role="button">Like</button>  <button class="button-85" onclick="" role="button">Dislike</button><i><b>Likes: </b><script>document.write(famelikes)</script></i><br>
+  <br>
+ 
+
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="postmain">
+
+    <a class="usernamepost"><b><center>Boston G.</center></b></button></a>
+      <br><br>
+      <iframe width="320" height="200" src="https://www.youtube.com/embed/goLa1WTem4Q" title="JUST START - TAKE THE FIRST STEP | Inspirational And Motivational Video Compilation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p>So inspirational ❤🧡</p>
+<!-- HTML !-->
+  <button class="button-85" onclick=""  role="button">Like</button>  <button class="button-85" onclick="" role="button">Dislike</button><i><b>Likes: </b><script>document.write(likes)</script></i><br>
+  <br>
+ 
+
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="footer">
+    <caption ID="0"><B>CREDITS</B>©Written by Moraly Froms and Jacob Sanchez, FINISHED 2024 EDITED 2049</caption><br>
+  <caption ID="1"><B>1</B>©2018 - PostBook Education Services</caption><br>
+  <caption ID="1"><B>1</B>©1998 - PostBook Web Services (©1991 PostBook Web) <a class="captionhref" href="" title="Open PostBook Webservice">https://licence.webservice.postbook.net</a></caption><br>
+  <caption ID="2"><B>2</B>THE USE OF THIS PROGRAM IS NOT TO BE COPIED, OR CONFUSED WITH <i>G SUITE</i></caption><br>
+  <caption ID="3"><B>3</B>RESOURCES INVOLVING THE MAIDPHONE, ANKER, NIXXON, GOMOTORS, PWS, POSTBOOK, <span title="Discontinued as a 3-rd class website">USA MOBILE</span>, MEDKIT, OR ANY OTHER POSTBOOK OWNED BUISNESSES</caption><br>
+  <caption ID="4"><B>4</B>DISCOUNT OFFERS OR MONTHLY PAYMENTS MUST HAVE A <I>POSTBOOK PREMIUM</I> MEMBERSHIP OR A <I TITLE="(PostBook student membership)">MyEdu MEMBERSHIP</I>, <B>ON ANY UNDERSTANDING ON HOW TO CREAT A MEMBERSHIP,<a CLASS="captionhref" href="#NEWMEMBER"> CLICK HERE</a></B></caption><br>
+  <caption ID="5"><B>5</B>TO TRADE IN A POSTBOOK DEVICE, YOU MUST COMPLY WITH THE TERMS AND CONDITIONS</caption><br>
+  <caption ID="6"><B>6</B>IF THE POSTBOOK PRODUCTS ARE COPIED, SUCH AS <I>DEVICES, SERVICES, WEBSITES, <SPAN title="Can be copied with account owners premission, see #11">OR ACCOUNTS<a class="cnote" href="#11">11</a></SPAN></I><img src="image files/Private/CopyrightIMG.png" width="1" height="1" alt="WARNING, IF THIS IMAGE IS NOT SHOWN, THAN THIS WEBSITE HAS BEEN COPIED, OR REPUBLISHED"></caption><br>
+  <caption ID="7"><B>7</B>TRADE IN VALUES, MUST TRADE IN A DEVICE MADE IN 2032 OR NEWER, TO TRADE IN A DEVICE SUCH AS, <I>USMOBILE</I> DEVICE, THAN PLEASE CONTACT THE USAMOBILE WEBSITE. </caption><br>
+  <caption ID="8"><B>8</B>TO TRADE IN A CAR, <i><MARK TITLE="SEE #12 OR CONTACT ZEE FAMILY CARS (<i>modified source</i>)"><A CLASS="CNOTE" HREF="#12">MODIFIED</A></MARK> OR <I TITLE="SEE #13">RUNNING</I> OR <U>NOT</U> PLEASE CONTACT <SPAN TITLE="US +1 800-425-8080">GOMOTORS</SPAN>  </i></caption><br>
+  <caption ID="9"><B>9</B>IF YOU ARE PURCHACING AN ITEM OUTSIDE OF THE USA, PLEASE DO NOT TRADE YOUR ITEM IN TO THE <B>POSTBOOK <I>USA</I></B> OFFICE, PLEASE RESORT TO TRADING YOUR ITEM TO YOUR OFFICE IN THE AREA, MAIDPHONE SHOPS ARE AVALIBLE IN <B><SPAN title="APPLE INC. (800 MY-APPLE)">APPLE</SPAN> <I>SHOPS</I></B></caption><br>
+  <caption ID="10"><B>10</B>IF YOU ARE PURCHACING AN ITEM IN THE US, YOU AGREE TO HAVE YOUR DEVICE SCANNED, VIEWED OR MONITORED FOR THE MINIMUM OF <I>3 SECONDS</I> AND MAX OF <I>ONE HOUR</I> (<U>depends on device use</U>)</caption><br>
+  <caption ID="11"><B>11</B>TO HAVE AN ACCOUNT COPIED, OR MODIFIED, (<U>OR PASSWORD SHARED</U>) PLEASE CONTACT THE <I title="APPLIES TO USA AND CANADA ONLY"><U>PWS DEPARTMENT OF ACCOUNTS (<B>USA/<SPAN TITLE="CANADA">CA</SPAN>:</B> <I>+1 888-704-2366</I>)</U></I></caption><br>
+  <caption ID="12"><B>12</B>TO TRADE A MODIFIED DEVICE, (<I>includes veichles, "GOMOTORS LLC."</I>) PLEASE FILL OUT A <I>POSTBOOK MODIFICATION SHEET,</I><A CLASS="CAPTIONHREF" HREF="" TITLE="Open PostBook Modification Sheet">https://webservice.postbook.net/lib/modifyform.htm</A></caption><br>
+  <caption ID="13"><B>13</B>TO TRADE A <I>RUNNING</I> DEVICE, IT MUST BE FROM 2032 OR NEWER, OLDER DEVICES CANNOT BE SOLD TO PWS/GOMOTORS</caption><br>
+  <caption ID="14"><B>14</B>TO TRADE A <I>Non-PostBook</I> DEVICE, IT MUST BE FROM 2032 OR NEWER, AND RELATIONED WITH POSTBOOK OR POSTBOOK (<b>PARTNER</b>)</caption><br>
+  <caption ID="15"><B>15</B>TO PURCHACE A WEB PRODUCT, (<i>Website</i>) or (<i>PostBook Premium,</i><u> Subscriptioin</u>) PLEASE COMPLY WITH THE TERMS OR CONDITIONS WITH THE PURCHACE. IF UNABLE TO COMPLY, YOUR SUBSCRIPTION WILL BE BANNED AND <I>NON-REFUNDABLE</I></caption><br>
+  <caption ID="16"><B>16</B>SMS IS NO LONGER SUPPORTED WITH <I>MAIDPHONE 10 <B>OR EARLIER</B></I>, PLEASE UPGRADE TO A NEWER PHONE</caption><br>
+  <caption ID="17"><B>17</B>MAIDPHONE CALLS ARE NO LONGER SUPPORTED WITH <I>MAIDPHONE 10 <B>OR EARLIER</B></I>, PLEASE UPGRADE TO A NEWER PHONE</caption><br>
+  <caption ID="18"><B>18</B>We approximate your location from your internet IP address by matching it to a geographic region or from the location entered during your previous visit to MaidPhone.</caption><br>
+  <caption ID="19"><B>19</B>SCRIBBLEITIS WEBSITES ARE UNDER COPYRIGHT FROM THE CREATOR, FOR COPYING PURPOSES PLEASE CONTACT THE DOCUMENT OWNER</caption><br>
+  <caption ID="20"><B>20</B>FOR SPECIAL DEALS OR PARTNERSHIPS, PLEASE CONTACT MAIDPHONE, (<I>SPECIAL DEALS ONLY QUALIFY FOR <B>POSTBOOK PREMIUM</B> MEMBERS</I>)</caption><br>
+
+
+</div>
+  <br>
+</div>
+<div id="Tokyo" class="tabcontent">
+  <style>
+    #scriptmakeachange{
+      width:100%;
+      height: 4.60cm;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: gray;
+      color: white;
+      padding:10px;
+    }
+  </style>
+  <div id="scriptmakeachange">
+   <p>Ready to make a change?</p><p>Paste this text in your website:</p><button onclick="document.getElementById('careertext').style.display = 'block'">Show Text</button> <button onclick="document.getElementById('scriptmakeachange').style.display = 'none'">Close</button><textarea style="float:right;" id="careertext"><script>console.log("[POSTBOOK]\n Ready to make a change?\n We are hiring at PostBook!\nBrowse some of our careers at: https://careers.postbook.net/")</script></textarea><p style="font-family: 'Courier New', Courier, monospace;">Output: Ready to make a change? Browse our careers at https://postbook.net/</p>
+  </div>
+    <center><h1>More Pages</h1></center>
+    <hr color="black">
+    <br>
+    <a class="morelinks" href="external website files/GoMotors/GOMOTORS.html">GoMotors <b>gomotors.postbook.net</b></a>
+    <br>
+    <a class="morelinks" href="external website files/Maidphone/MAIDPHONE.html">Maidphone <b>postbook.net</b></a>
+    <br>
+    <a class="morelinks" href="external website files/MedKit/MEDKIT.html">MedKit <b>medkit.com</b></a>
+    <br>
+    <a class="morelinks" href="external website files/PWS.XYZ/pws-xyz.htm">PostWorks <b>pws.xyz <i>subject to change</i></b></a>
+    <br>
+    <a class="morelinks" href="external website files/USAMOBILE/USAMOBILE.htm">USA Mobile <b>usamobile.net (usamobile.net/main.htm)</b></a>
+    <br>
+    <a class="morelinks" href="external website files/PWSBUGS/Application.html">PostBook Bugs ✨New!<b>bugs.pws.xyz</b></a>
+
+    <br>
+    <br>
+    <br>
+    <center><P><B>Terms And Conditions Page</B></P></center>
+    <a class="morelinks" href="helper files/toc.htm">Terms and Conditions</a>
+  <center><p><b>More Pages</b></p></center>
+  <a class="morelinks" href="lib/Public LIB/edu/education.html">PostBook Education<b>edu.postbook.net <i>(edu.co)</i></b></a>
+<br>
+    <a class="morelinks" href="lib/Public LIB/upload pages/Upload Websites.html">Scribbleitis<b>doodles.postbook.net/createpage (scribbleitis.com)</b></a>
+<br>
+<a class="morelinks" href="external website files/A - I/A - I.htm">A.I<b>ai.postbook.net</b></a>
+    <Br>
+      <a class="morelinks" href="lib/Public LIB/onemedia/one.html">PostBook One<b>one.postbook.net</b></a>
+<br>
+      <a class="morelinks" href="lib/Public LIB/nato/nato.html">NATO OS<b>nato.postbook.net</b></a>
+    <br>
+    <a class="morelinks" href="lib/Public LIB/onemedia/onemedia.htm">PostBook OneMedia<b>onemedia.postbook.net <i>(postbookonemedia.net)</i></b></a>
+<br>
+    <a class="morelinks" href="external website files/additional html documents/PostBook Fonts.html">Fonts <b>fonts.postbook.net</b></a>
+    <br>
+    <a class="morelinks" href="https://apple.com">Apple <b>apple.com</b></a>
+    <br>
+    <a class="morelinks" href="external website files/additional html documents/PostBook For Developers.htm">Developers <b>developers.postbook.net <i>pws.xyz/dev</i></b></a>
+    <br>
+    <a class="morelinks" href="external website files/additional html documents/PostBook Scripts.htm">Skripter <b>scripts.postbook.net <i>pws.xyz/skript</i></b></a>
+    <br>
+    <a class="morelinks" href="external website files/additional html documents/error.sscripy">Error Deployer <b>error.pws.xyz</b></a>
+    <br>
+    <a class="morelinks" href="file:///D:/Desktop - Alex/PostBook - Social Media/fileviewer.htm">File Viewer <b>postbook.net/lib <i>postbook.net:3000</i></b></a>
+    <br>
+    <a class="morelinks" href="external website files/additional html documents/PostBook Search/PostBook USA.htm">PostBook Search USA <b>search.postbook.com</b></a>
+    <br>
+    <a class="morelinks" href="external website files/additional html documents/PostBook Search/PostBook Canada.htm">PostBook Search Canada <b>search.postbook.ca</b></a>
+    <br>
+    <a class="morelinks" href="external website files/additional html documents/PostBook Search/PostBook Mexico.htm">PostBook Search Mexico <b>search.postbook.me</b></a>
+    <br>
+    <a class="morelinks" href="external website files/additional html documents/PostBook Search/PostBook Australlia.htm">PostBook Search Australlia <b>search.postbook.au</b></a>
+    <br>
+    <a class="morelinks" href="external website files/additional html documents/PostBook Search/PostBook EU.htm">PostBook Search Europe <b>search.postbook.eu</b></a>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="footer">
+      <caption ID="0"><B>CREDITS</B>©Written by Moraly Froms and Jacob Sanchez, FINISHED 2024 EDITED 2049</caption><br>
+    <caption ID="1"><B>1</B>©2018 - PostBook Education Services</caption><br>
+    <caption ID="1"><B>1</B>©1998 - PostBook Web Services (©1991 PostBook Web) <a class="captionhref" href="" title="Open PostBook Webservice">https://licence.webservice.postbook.net</a></caption><br>
+    <caption ID="2"><B>2</B>THE USE OF THIS PROGRAM IS NOT TO BE COPIED, OR CONFUSED WITH <i>G SUITE</i></caption><br>
+    <caption ID="3"><B>3</B>RESOURCES INVOLVING THE MAIDPHONE, ANKER, NIXXON, GOMOTORS, PWS, POSTBOOK, <span title="Discontinued as a 3-rd class website">USA MOBILE</span>, MEDKIT, OR ANY OTHER POSTBOOK OWNED BUISNESSES</caption><br>
+    <caption ID="4"><B>4</B>DISCOUNT OFFERS OR MONTHLY PAYMENTS MUST HAVE A <I>POSTBOOK PREMIUM</I> MEMBERSHIP OR A <I TITLE="(PostBook student membership)">MyEdu MEMBERSHIP</I>, <B>ON ANY UNDERSTANDING ON HOW TO CREAT A MEMBERSHIP,<a CLASS="captionhref" href="#NEWMEMBER"> CLICK HERE</a></B></caption><br>
+    <caption ID="5"><B>5</B>TO TRADE IN A POSTBOOK DEVICE, YOU MUST COMPLY WITH THE TERMS AND CONDITIONS</caption><br>
+    <caption ID="6"><B>6</B>IF THE POSTBOOK PRODUCTS ARE COPIED, SUCH AS <I>DEVICES, SERVICES, WEBSITES, <SPAN title="Can be copied with account owners premission, see #11">OR ACCOUNTS<a class="cnote" href="#11">11</a></SPAN></I><img src="image files/Private/CopyrightIMG.png" width="1" height="1" alt="WARNING, IF THIS IMAGE IS NOT SHOWN, THAN THIS WEBSITE HAS BEEN COPIED, OR REPUBLISHED"></caption><br>
+    <caption ID="7"><B>7</B>TRADE IN VALUES, MUST TRADE IN A DEVICE MADE IN 2032 OR NEWER, TO TRADE IN A DEVICE SUCH AS, <I>USMOBILE</I> DEVICE, THAN PLEASE CONTACT THE USAMOBILE WEBSITE. </caption><br>
+    <caption ID="8"><B>8</B>TO TRADE IN A CAR, <i><MARK TITLE="SEE #12 OR CONTACT ZEE FAMILY CARS (<i>modified source</i>)"><A CLASS="CNOTE" HREF="#12">MODIFIED</A></MARK> OR <I TITLE="SEE #13">RUNNING</I> OR <U>NOT</U> PLEASE CONTACT <SPAN TITLE="US +1 800-425-8080">GOMOTORS</SPAN>  </i></caption><br>
+    <caption ID="9"><B>9</B>IF YOU ARE PURCHACING AN ITEM OUTSIDE OF THE USA, PLEASE DO NOT TRADE YOUR ITEM IN TO THE <B>POSTBOOK <I>USA</I></B> OFFICE, PLEASE RESORT TO TRADING YOUR ITEM TO YOUR OFFICE IN THE AREA, MAIDPHONE SHOPS ARE AVALIBLE IN <B><SPAN title="APPLE INC. (800 MY-APPLE)">APPLE</SPAN> <I>SHOPS</I></B></caption><br>
+    <caption ID="10"><B>10</B>IF YOU ARE PURCHACING AN ITEM IN THE US, YOU AGREE TO HAVE YOUR DEVICE SCANNED, VIEWED OR MONITORED FOR THE MINIMUM OF <I>3 SECONDS</I> AND MAX OF <I>ONE HOUR</I> (<U>depends on device use</U>)</caption><br>
+    <caption ID="11"><B>11</B>TO HAVE AN ACCOUNT COPIED, OR MODIFIED, (<U>OR PASSWORD SHARED</U>) PLEASE CONTACT THE <I title="APPLIES TO USA AND CANADA ONLY"><U>PWS DEPARTMENT OF ACCOUNTS (<B>USA/<SPAN TITLE="CANADA">CA</SPAN>:</B> <I>+1 888-704-2366</I>)</U></I></caption><br>
+    <caption ID="12"><B>12</B>TO TRADE A MODIFIED DEVICE, (<I>includes veichles, "GOMOTORS LLC."</I>) PLEASE FILL OUT A <I>POSTBOOK MODIFICATION SHEET,</I><A CLASS="CAPTIONHREF" HREF="" TITLE="Open PostBook Modification Sheet">https://webservice.postbook.net/lib/modifyform.htm</A></caption><br>
+    <caption ID="13"><B>13</B>TO TRADE A <I>RUNNING</I> DEVICE, IT MUST BE FROM 2032 OR NEWER, OLDER DEVICES CANNOT BE SOLD TO PWS/GOMOTORS</caption><br>
+    <caption ID="14"><B>14</B>TO TRADE A <I>Non-PostBook</I> DEVICE, IT MUST BE FROM 2032 OR NEWER, AND RELATIONED WITH POSTBOOK OR POSTBOOK (<b>PARTNER</b>)</caption><br>
+    <caption ID="15"><B>15</B>TO PURCHACE A WEB PRODUCT, (<i>Website</i>) or (<i>PostBook Premium,</i><u> Subscriptioin</u>) PLEASE COMPLY WITH THE TERMS OR CONDITIONS WITH THE PURCHACE. IF UNABLE TO COMPLY, YOUR SUBSCRIPTION WILL BE BANNED AND <I>NON-REFUNDABLE</I></caption><br>
+    <caption ID="16"><B>16</B>SMS IS NO LONGER SUPPORTED WITH <I>MAIDPHONE 10 <B>OR EARLIER</B></I>, PLEASE UPGRADE TO A NEWER PHONE</caption><br>
+    <caption ID="17"><B>17</B>MAIDPHONE CALLS ARE NO LONGER SUPPORTED WITH <I>MAIDPHONE 10 <B>OR EARLIER</B></I>, PLEASE UPGRADE TO A NEWER PHONE</caption><br>
+    <caption ID="18"><B>18</B>We approximate your location from your internet IP address by matching it to a geographic region or from the location entered during your previous visit to MaidPhone.</caption><br>
+    <caption ID="19"><B>19</B>SCRIBBLEITIS WEBSITES ARE UNDER COPYRIGHT FROM THE CREATOR, FOR COPYING PURPOSES PLEASE CONTACT THE DOCUMENT OWNER</caption><br>
+    <caption ID="20"><B>20</B>FOR SPECIAL DEALS OR PARTNERSHIPS, PLEASE CONTACT MAIDPHONE, (<I>SPECIAL DEALS ONLY QUALIFY FOR <B>POSTBOOK PREMIUM</B> MEMBERS</I>)</caption><br>
+  
+  
+  </div>
+    <br>
+
+
+</div>
+    <div id="London" class="tabcontent">
+    <div id="headimgdisplay" style="background-image: url('image files/RightImageMainScreen.png');">
+  <center style="padding-right: 10cm;">
+    <h1>Meet MaidPhone 42 Ultra</h3>
+        <br> 
+        <p>A radial design when it comes to</p>
+        <p>building the right phone for the</p>
+        <p>right user.</p> <button class="button-10" id="" onclick="phoneshop()">Learn More</button>
+        <br><Br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<img src="image files/MainPhone.png" width="472" height="629" style="float:left;">  <center><h2 style="float:rightf;">Maidphone 42, the newest, and best phone</h2> <button style="float:rfight;" class="button-10">Learn More</button><br></center>
+<button type="button" class="btn btn-secondary btn-lg btn-block" onclick="">More Products</button>
+  </center>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+    <div id="tradein">
+      <center><h2>Trade in a phone?</h2><br><p>Get $170 - $700 off when you trade in your Maidphone 34 or newer<a class="anote" href="#7">7</a></p><br><button type="button" class="btn btn-secondary btn-lg btn-block" onclick="">Get your estimate</button><button type="button" class="btn btn-secondary btn-lg btn-block" onclick="">Trade an Apple iPhone<a class="anote" href="#14">14</a></button>
+
+      </center>
+</div>
+<div id="acessories">
+  <div id="acessories-text">
+    <h1>Acessories</h1><br>
+    <p>View our acessories. <button class="button-10" id="" onclick="">Shop</button></p>
+</div>
+</body>
+
+</div>
+  <!--NO HTML ELEMENTS CAN PASSTHROUGH-->
+
+<footer>
+  <style>
+    .footer{
+  font-size: 10px;
+  background-color: black;
+  color:white;
+}
+  </style>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="footer">
+    <caption ID="0"><B>CREDITS</B>©Written by Moraly Froms and Jacob Sanchez, FINISHED 2024 EDITED 2049</caption><br>
+  <caption ID="1"><B>1</B>©2018 - PostBook Education Services</caption><br>
+  <caption ID="1"><B>1</B>©1998 - PostBook Web Services (©1991 PostBook Web) <a class="captionhref" href="" title="Open PostBook Webservice">https://licence.webservice.postbook.net</a></caption><br>
+  <caption ID="2"><B>2</B>THE USE OF THIS PROGRAM IS NOT TO BE COPIED, OR CONFUSED WITH <i>G SUITE</i></caption><br>
+  <caption ID="3"><B>3</B>RESOURCES INVOLVING THE MAIDPHONE, ANKER, NIXXON, GOMOTORS, PWS, POSTBOOK, <span title="Discontinued as a 3-rd class website">USA MOBILE</span>, MEDKIT, OR ANY OTHER POSTBOOK OWNED BUISNESSES</caption><br>
+  <caption ID="4"><B>4</B>DISCOUNT OFFERS OR MONTHLY PAYMENTS MUST HAVE A <I>POSTBOOK PREMIUM</I> MEMBERSHIP OR A <I TITLE="(PostBook student membership)">MyEdu MEMBERSHIP</I>, <B>ON ANY UNDERSTANDING ON HOW TO CREAT A MEMBERSHIP,<a CLASS="captionhref" href="#NEWMEMBER"> CLICK HERE</a></B></caption><br>
+  <caption ID="5"><B>5</B>TO TRADE IN A POSTBOOK DEVICE, YOU MUST COMPLY WITH THE TERMS AND CONDITIONS</caption><br>
+  <caption ID="6"><B>6</B>IF THE POSTBOOK PRODUCTS ARE COPIED, SUCH AS <I>DEVICES, SERVICES, WEBSITES, <SPAN title="Can be copied with account owners premission, see #11">OR ACCOUNTS<a class="cnote" href="#11">11</a></SPAN></I><img src="image files/Private/CopyrightIMG.png" width="1" height="1" alt="WARNING, IF THIS IMAGE IS NOT SHOWN, THAN THIS WEBSITE HAS BEEN COPIED, OR REPUBLISHED"></caption><br>
+  <caption ID="7"><B>7</B>TRADE IN VALUES, MUST TRADE IN A DEVICE MADE IN 2032 OR NEWER, TO TRADE IN A DEVICE SUCH AS, <I>USMOBILE</I> DEVICE, THAN PLEASE CONTACT THE USAMOBILE WEBSITE. </caption><br>
+  <caption ID="8"><B>8</B>TO TRADE IN A CAR, <i><MARK TITLE="SEE #12 OR CONTACT ZEE FAMILY CARS (<i>modified source</i>)"><A CLASS="CNOTE" HREF="#12">MODIFIED</A></MARK> OR <I TITLE="SEE #13">RUNNING</I> OR <U>NOT</U> PLEASE CONTACT <SPAN TITLE="US +1 800-425-8080">GOMOTORS</SPAN>  </i></caption><br>
+  <caption ID="9"><B>9</B>IF YOU ARE PURCHACING AN ITEM OUTSIDE OF THE USA, PLEASE DO NOT TRADE YOUR ITEM IN TO THE <B>POSTBOOK <I>USA</I></B> OFFICE, PLEASE RESORT TO TRADING YOUR ITEM TO YOUR OFFICE IN THE AREA, MAIDPHONE SHOPS ARE AVALIBLE IN <B><SPAN title="APPLE INC. (800 MY-APPLE)">APPLE</SPAN> <I>SHOPS</I></B></caption><br>
+  <caption ID="10"><B>10</B>IF YOU ARE PURCHACING AN ITEM IN THE US, YOU AGREE TO HAVE YOUR DEVICE SCANNED, VIEWED OR MONITORED FOR THE MINIMUM OF <I>3 SECONDS</I> AND MAX OF <I>ONE HOUR</I> (<U>depends on device use</U>)</caption><br>
+  <caption ID="11"><B>11</B>TO HAVE AN ACCOUNT COPIED, OR MODIFIED, (<U>OR PASSWORD SHARED</U>) PLEASE CONTACT THE <I title="APPLIES TO USA AND CANADA ONLY"><U>PWS DEPARTMENT OF ACCOUNTS (<B>USA/<SPAN TITLE="CANADA">CA</SPAN>:</B> <I>+1 888-704-2366</I>)</U></I></caption><br>
+  <caption ID="12"><B>12</B>TO TRADE A MODIFIED DEVICE, (<I>includes veichles, "GOMOTORS LLC."</I>) PLEASE FILL OUT A <I>POSTBOOK MODIFICATION SHEET,</I><A CLASS="CAPTIONHREF" HREF="" TITLE="Open PostBook Modification Sheet">https://webservice.postbook.net/lib/modifyform.htm</A></caption><br>
+  <caption ID="13"><B>13</B>TO TRADE A <I>RUNNING</I> DEVICE, IT MUST BE FROM 2032 OR NEWER, OLDER DEVICES CANNOT BE SOLD TO PWS/GOMOTORS</caption><br>
+  <caption ID="14"><B>14</B>TO TRADE A <I>Non-PostBook</I> DEVICE, IT MUST BE FROM 2032 OR NEWER, AND RELATIONED WITH POSTBOOK OR POSTBOOK (<b>PARTNER</b>)</caption><br>
+  <caption ID="15"><B>15</B>TO PURCHACE A WEB PRODUCT, (<i>Website</i>) or (<i>PostBook Premium,</i><u> Subscriptioin</u>) PLEASE COMPLY WITH THE TERMS OR CONDITIONS WITH THE PURCHACE. IF UNABLE TO COMPLY, YOUR SUBSCRIPTION WILL BE BANNED AND <I>NON-REFUNDABLE</I></caption><br>
+  <caption ID="16"><B>16</B>SMS IS NO LONGER SUPPORTED WITH <I>MAIDPHONE 10 <B>OR EARLIER</B></I>, PLEASE UPGRADE TO A NEWER PHONE</caption><br>
+  <caption ID="17"><B>17</B>MAIDPHONE CALLS ARE NO LONGER SUPPORTED WITH <I>MAIDPHONE 10 <B>OR EARLIER</B></I>, PLEASE UPGRADE TO A NEWER PHONE</caption><br>
+  <caption ID="18"><B>18</B>We approximate your location from your internet IP address by matching it to a geographic region or from the location entered during your previous visit to MaidPhone.</caption><br>
+  <caption ID="19"><B>19</B>SCRIBBLEITIS WEBSITES ARE UNDER COPYRIGHT FROM THE CREATOR, FOR COPYING PURPOSES PLEASE CONTACT THE DOCUMENT OWNER</caption><br>
+  <caption ID="20"><B>20</B>FOR SPECIAL DEALS OR PARTNERSHIPS, PLEASE CONTACT MAIDPHONE, (<I>SPECIAL DEALS ONLY QUALIFY FOR <B>POSTBOOK PREMIUM</B> MEMBERS</I>)</caption><br>
+
+
+</div>
+  <br>
+  
+  </footer>
+</html>
